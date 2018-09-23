@@ -1,13 +1,13 @@
-var question1Answers = ("answer1");
-answer1 = alert("A","B","C");;
-var question2Aanswers = ("answer2");
-answer2 = ("A","B","C");
-var question3Answers = ("answer3");
-answer1 = alert("A","B","C");
-var question4Answers = ("answer4");
-answer4 = alert("A","B","C");
-var question5Answers = ("answer5");
-answer5 = alert("A","B","C");
+var question1Answers = prompt("Inside which HTML element do we put the JavaScript?"); //I'm going to type JavaScript, script, js //
+question1Answers = ("A) JavaScript", "B)script", "C)js");
+var question2Aanswers = prompt("How do you declare a JavaScript variable?");  //I'm going to type V carName;, variable carName;, var carName; //
+question2Aanswers = ("A) v carName;", "B) variable carName;", "C) var carName;");
+var question3Answers = promp("Which event occurs when the user clicks on an HTML element");
+question3Answers  = alert(" A) onmouseover", "B) onclick", "C) onchange");
+var question4Answers = prompt("How do you create a function named "myFunction"?");
+question4Answers = alert("A) function myFunction", "B)function=myFunction", "C) Function;myFunction");
+var question5Answers = prompt("How do you write "hello World" in an alert box?");
+question5Answers = alert("A) msg(Hello World)", "B) alertBox(Hello World)", "C) alert(Hello World)");
 
 
 
@@ -51,3 +51,19 @@ $(document).ready(function() {
       var answer5 = $("input:radio[name=question-5-answers]:checked").val();
    }):
 }):
+
+            $answer1 = $_POST['question-1-answers'];
+            $answer2 = $_POST['question-2-answers'];
+            $answer3 = $_POST['question-3-answers'];
+            $answer4 = $_POST['question-4-answers'];
+            $answer5 = $_POST['question-5-answers'];
+
+            $totalCorrect = 0;
+
+            if ($answer1 == "B") { $totalCorrect++; }
+            if ($answer2 == "C") { $totalCorrect++; }
+            if ($answer3 == "B") { $totalCorrect++; }
+            if ($answer4 == "A") { $totalCorrect++; }
+            if ($answer5 == "C") { $totalCorrect++; }
+
+            echo "<div id='results'>$totalCorrect / 5 correct</div>";
