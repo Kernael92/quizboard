@@ -25,31 +25,34 @@ $(document).ready(function() {
    $(form#quiz).submit(function(event){
       event.preventDefault();
       var answer1 = $("input:radio[name=question-1-answers]:checked").val();
+      $("#output").text(result);
    }):
 }):
 $(document).ready(function() {
    $(form#quiz).submit(function(event){
       event.preventDefault();
       var answer2 = $("input:radio[name=question-2-answers]:checked").val();
+      $("#output").text(result);
    }):
 }):
 $(document).ready(function() {
    $(form#quiz).submit(function(event){
       event.preventDefault();
       var answer3 = $("input:radio[name=question-3-answers]:checked").val();
+      $("#output").text(result);
    }):
 }):
 $(document).ready(function() {
    $(form#quiz).submit(function(event){
       event.preventDefault();
       var answer4 = $("input:radio[name=question-4-answers]:checked").val();
+      $("#output").text(result);
    }):
 }):
 $(document).ready(function() {
    $(form#quiz).submit(function(event){
       event.preventDefault();
       var answer5 = $("input:radio[name=question-5-answers]:checked").val();
+      $("#output").text(result);
    }):
 }):
-
-            

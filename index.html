@@ -9,12 +9,15 @@
       <script src="js/scripts.js"></script>
    </head>
    <body>
+      <div class="jumbotron">
 
       <h1>QUEASTIONS ON JavaScript</h1>
       <p>Kindly answer all the questions below and submit your work</p>
+   </div>
       <form action="grade.php" method="post" id="quiz">
       <ol>
          <li>
+         <div class="panel panel-info">
          <h2>Inside which HTML element do we put the JavaScript?</h2>
          <div class="radio">
          <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" checked />
@@ -25,13 +28,16 @@
             <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
             <label For="question-1-answers-B">B) sript</label>
             </div>
+
          <div class="radio">
 
                <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
                <label for="question-1-answers-C">C) js</label>
             </div>
+            </div>
 
          <h2>How do you declare a JavaScript variable?</h2>
+         <div class="panel panel-primary">
          <div class="radio">
 
          <input type="radio" name="question-2-answers" id="question-2-answers-A" value=A checked />
@@ -47,7 +53,9 @@
                <input type="radio" name="question-2-answers" id="question-2-answers-C" value="C" />
                <label for="question-2-answers-C">C) var carName;</label>
                </div>
+            </div>
                <h2>Which event occurs when the user clicks on an HTML element?<h2/>
+                  <div class="well">
                   <div class="radio">
 
                <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" checked />
@@ -63,12 +71,13 @@
                <input type="radio" name="question-3-answers" id="question-3-answers-C"value="C"></input>
                <label for="question-3-answers-C">C) onchange</label>
             </div>
+         </div>
             <h2>How do you create a function named "myFunction"?</h2>
             <div class="radio">
 
                <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" checked />
                <label for="question-4-answers-A">A) function myFunction</label>
-            </div>
+
          <div class="radio">
 
                <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B"/>
@@ -79,7 +88,9 @@
                <input type="radio" name="question-4-answers" id="question-4-answers-C" value="C" />
                <label for="question-4-answers-C">C) Function: myFunction</label>
             </div>
+            </div>
             <h2>How do you write "hello World" in an alert box?</h2>
+            <div class="panel panel-danger">
             <div class="radio">
 
                <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" checked />
@@ -96,6 +107,7 @@
                <input type="radio" name="question-5-answers"id="question-5-answers-C" value="C" />
                <label for="question-5-answers-C">C) alert("Hello World")</label>
             </div><br><br>
+         </div>
             </li>
          </ol>
          <input type="submit" value="Submit Quiz" />
