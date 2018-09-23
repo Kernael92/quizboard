@@ -1,0 +1,9 @@
+body {
+   background-image:url(..//img/image.jpg);
+   background-size: cover;
+   background-repeat: repeat;
+   border: 25px;
+   margin: 25px;
+   padding: 25px;
+
+}
