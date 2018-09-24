@@ -9,123 +9,77 @@
       <script src="js/scripts.js"></script>
    </head>
    <body>
+      <div class="container">
       <div class="jumbotron">
       <h1>QUEASTIONS ON JavaScript</h1>
       <p>Kindly answer all the questions below and submit your work</p>
       </div>
-      <form  id="quiz">
       <div class="col-sm-7">
-         <ol>
+      <form class="questionForm" id="q1" data-question"1">
+         <ul>
             <li>
-                  <h2>Inside which HTML element do we put the JavaScript?</h2>
-                  <div class="panel panel-info">
-                  <div class="radio">
-                  <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A"  />
-                  <label for="question-1-answers-A">A) JavaScript</label>
-                  </div>
-
-                  <div class="radio">
-                  <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
-                  <label For="question-1-answers-B">B) sript</label>
-                  </div>
-
-                  <div class="radio">
-
-                  <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
-                  <label for="question-1-answers-C">C) js</label>
-                  </div>
-                  </div>
-
-
-                  <h2>How do you declare a JavaScript variable?</h2>
-
-                  <div class="panel panel-primary">
-                  <div class="radio">
-
-                  <input type="radio" name="question-2-answers" id="question-2-answers-A" value=A  />
-                  <label for="question-2-answers-A">A) v carName;</label>
-                  </div>
-                  <div class="radio">
-
-                  <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
-                  <label for="question-2-answers-B">B) variable carName;</label>
-                  </div>
-                  <div class="radio">
-
-                  <input type="radio" name="question-2-answers" id="question-2-answers-C" value="C" />
-                  <label for="question-2-answers-C">C) var carName;</label>
-                  </div>
-                  </div>
-
-
-                  <h2>Which event occurs when the user clicks on an HTML element?<h2/>
-
-                  <div class=" panel panel-success">
-                  <div class="radio">
-
-                  <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A"  />
-                  <label for="question-3-answers-A">A) onmouseover</label>
-                  </div>
-                  <div class="radio">
-
-                  <input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" />
-                  <label for="question-3-answers-B">B) onclick</label>
-                  </div>
-                  <div class="radio">
-
-                  <input type="radio" name="question-3-answers" id="question-3-answers-C"value="C" />
-                  <label for="question-3-answers-C">C) onchange</label>
-                  </div>
-                  </div>
-
-
-                  <h2>How do you create a function named "myFunction"?</h2>
-
-                  <div class="panel panel-danger">
-                  <div class="radio">
-
-                  <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A"  />
-                  <label for="question-4-answers-A">A) function myFunction</label>
-
-                  <div class="radio">
-
-                  <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B"/>
-                  <label for="question-4-answers-B">B) function = myFunction</label>
-                  </div>
-                  <div class="radio">
-
-                  <input type="radio" name="question-4-answers" id="question-4-answers-C" value="C" />
-                  <label for="question-4-answers-C">C) Function: myFunction</label>
-                  </div>
-                  </div>
-                  </div>
-
-                  <h2>How do you write "hello World" in an alert box?</h2>
-
-                  <div class="panel panel-danger">
-                  <div class="radio">
-
-                  <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A"/>
-                  <label for="question-5-answers-A">A) msg("Hello World")</label>
-                  </div>
-                  <div class="radio">
-
-                  <input type="radio" nmae="question-5-answers" id="question-5-answers-B" value="B"/>
-                  <label for="question-5-answers-B">B) alertBox("Hello World")</label>
-                  </div>
-
-                  <div class="radio">
-
-                  <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C"/>
-                  <label for="question-5-answers-C">C) alert("Hello World")</label>
-                  </div><br><br>
-                  </div>
-
-               </li>
-            </ol><br>
-            
-            <input type="submit" value="Submit Quiz" />
-         </div>
+               <h2>1. Inside which HTML element do we put the JavaScript?</h2>
+               <div class="panel panel-info">
+                  <input type="radio" name="q1"  value="A"  />JavaScript
+                  <input type="radio" name="q1"  value="B" />sript
+                  <input type="radio" name="q1"  value="C" />js
+               </div>
+            </li>
+         </ul>
+         <button id="submit">Submit</button>
       </form>
+      <form class="questionForm" id="q2" data-question"2">
+         <ul>
+            <li>
+               <h2>2. How do you declare a JavaScript variable?</h2>
+               <div class="panel panel-primary">
+                  <input type="radio" name="q2" value=A  />  v carName;
+                  <input type="radio" name="q2" value=B  />  variable carName;
+                  <input type="radio" name="q2" value=C  />  var carName;
+               </div>
+            </li>
+         </ul>
+         <button id="submit">Submit</button>
+      </form>
+      <form class="questionForm" id="q3" data-question"3">
+         <ul>
+            <li>
+               <h2>3. Which event occurs when the user clicks on an HTML element?<h2/>
+               <div class=" panel panel-success">
+                  <input type="radio" name="q3"  value="A"  /> onmouseover
+                  <input type="radio" name="q3"  value="B"  /> onclick
+                  <input type="radio" name="q3"  value="C"  /> onchange
+               </div>
+            </li>
+         </ul>
+         <button id="submit">Submit</button>
+      </form>
+      <form class="questionForm" id="q4" data-question"4">
+         <ul>
+            <li>
+               <h2>4. How do you create a function named "myFunction"?</h2>
+               <div class="panel panel-danger">
+                  <input type="radio" name="q4"  value="A"  /> function myFunction
+                  <input type="radio" name="q4"  value="B"  /> function = myFunction
+                  <input type="radio" name="q4"  value="C"  /> Function: myFunction
+               </div>
+            </li>
+         </ul>
+         <button id="submit">Submit</button>
+         </form>
+         <form class="questionForm" id="q5" data-question"5">
+            <ul>
+               <li>
+                  <h2>5. Is JavaScript the same as Java</h2>
+                  <div class="panel panel-danger">
+                     <input type="radio" name="q5"  value="A"  /> True
+                     <input type="radio" name="q5"  value="B"  /> False
+                  </div>
+               </li>
+            </ul>
+            <button id="submit">Submit</button>
+         </form>
+         </div>
+      </div>
    </body>
 </html>
