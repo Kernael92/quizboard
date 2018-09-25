@@ -1,3 +1,26 @@
+var scrore = 0; //set score to 0
+var total = 5; //Total number of questions
+var point = 1; //points per correct answer
+var highest = total * point;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $(document).ready(function() {
    //Hide all questions
    $('.questionForm').hide();
@@ -25,7 +48,7 @@ $(document).ready(function() {
    });
    $("q5 #submit").click(function() {
       $("questionForm").hide();
-      $('#results').fadeIn(200); 
+      $('#results').fadeIn(200);
       return false;
    });
 
