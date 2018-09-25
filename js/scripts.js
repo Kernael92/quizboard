@@ -5,11 +5,11 @@ var highest = total * point;
 
 function init () {
    // set correct answers
-   sessionStorage.setItem("a1","B");
-   sessionStorage.setItem("a2","C");
-   sessionStorage.setItem("a3","B");
-   sessionStorage.setItem("a4","A");
-   sessionStorage.setItem("a5","B");
+   sessionStorage.setItem("A1","B");
+   sessionStorage.setItem("A2","C");
+   sessionStorage.setItem("A3","B");
+   sessionStorage.setItem("A4","A");
+   sessionStorage.setItem("A5","B");
 
 
 }
@@ -64,3 +64,5 @@ $(document).ready(function() {
    });
 
 });
+//Add event listener
+window.addEventListener("load", init, false);
