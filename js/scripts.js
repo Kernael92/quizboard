@@ -50,29 +50,68 @@ $(document).ready(function() {
    });
 
    $('#submit').click(function() {
-      var q1 = document.getElementByName('q1');
-      var q2 = document.getElementByName('q2');
-      var q3 = document.getElementByName('q3');
-      var q4 = document.getElementByName('q4');
-      var q5 = document.getElementByName('q5');
+      var q1 = document.quiz.q1.value;
+      var q2 = document.quiz.q2.value;
+      var q3 = document.quiz.q3.value;
+      var q4 = document.quiz.q4.value;
+      var q5 = document.quiz.q5.value;
 
-      if (n == total){
-         $("#results").html("<h2>Your final score is:"+score+ "out of"  + "highest"+"</h2><a href=\"index.html\">Take Quiz");
+      var correct = 0;
+
+      if (q1 == "B"){
+         correct++;
       }
-      if (score == highest){
-         $("#results").append("<p>You are a JavaScript guru!</p>");
-      } else if (score == medium ){
-         $("#results").append("<p>Good job</p>");
-      } else if (score == lowest){
-         $("#result").append("<p>Poor! Revisit your notes on JavaScript</p>")
-      } else
+      if (q2 == "A") {
+         correct++
+      }
+      if (q3 == "B") {
+         correct++
+      }
+      if (q4 == "A") {
+         correct++
+      }
+      if (q2 == "B") {
+         correct++
+      }
 
-         alert ("false");
-      });
-
-
-
+      if (correct < 2) {
+         alert("You can do better! Kindly revisit your JavaScript notes.")
+      }
+      if (correct > 3) {
+         alert("Great work! You are a JavaScript guru")
+      }
    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+   //    if (n == total){
+   //       $("#results").html("<h2>Your final score is:"+score+ "out of"  + "highest"+"</h2><a href=\"index.html\">Take Quiz");
+   //    }
+   //    if (score == highest){
+   //       $("#results").append("<p>You are a JavaScript guru!</p>");
+   //    } else if (score == medium ){
+   //       $("#results").append("<p>Good job</p>");
+   //    } else if (score == lowest){
+   //       $("#result").append("<p>Poor! Revisit your notes on JavaScript</p>")
+   //    } else
+   //
+   //       alert ("false");
+   //    });
+   //
+   //
+   //
+   // });
 
    //$(".questionFor#submit").click(function() {
 
