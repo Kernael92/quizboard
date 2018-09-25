@@ -3,6 +3,17 @@ var total = 5; //Total number of questions
 var point = 1; //points per correct answer
 var highest = total * point;
 
+function init () {
+   // set correct answers
+   sessionStorage.setItem("a1","B");
+   sessionStorage.setItem("a2","C");
+   sessionStorage.setItem("a3","B");
+   sessionStorage.setItem("a4","A");
+   sessionStorage.setItem("a5","B");
+
+
+}
+
 
 
 
