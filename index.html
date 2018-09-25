@@ -5,8 +5,7 @@
       <title> JavaScript QUIZ</title>
       <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
       <link href="css/styles.css" rel="stylesheet" type="text/css">
-      <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
+      <script src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
       <script src="js/scripts.js"></script>
@@ -14,11 +13,12 @@
    <body>
       <div class="container">
       <div class="jumbotron">
-      <h1>QUEASTIONS ON JavaScript</h1>
+      <h1>QUESTIONS ON JavaScript</h1>
       <p>Kindly answer all the questions below and submit your work</p>
       </div>
       <div class="col-sm-7">
-      <form class="questionForm" id="q1" data-question"1">
+      <form method="post">
+      <div  class="questionForm" id="q1" data-question"1">
          <ul>
             <li>
                <h2>1. Inside which HTML element do we put the JavaScript?</h2>
@@ -29,9 +29,9 @@
                </div>
             </li>
          </ul>
-         <button id="btn1">NEXT</button>
-      </form>
-      <form class="questionForm" id="q2" data-question"2">
+         <a id="btn1">NEXT</a>
+      </div>
+      <div  class="questionForm" id="q2" data-question"2">
          <ul>
             <li>
                <h2>2. How do you declare a JavaScript variable?</h2>
@@ -42,9 +42,9 @@
                </div>
             </li>
          </ul>
-         <button id="btn2">NEXT</button>
-      </form>
-      <form class="questionForm" id="q3" data-question"3">
+         <a id="btn2">NEXT</a>
+      </div>
+      <div  class="questionForm" id="q3" data-question"3">
          <ul>
             <li>
                <h2>3. Which event occurs when the user clicks on an HTML element?<h2/>
@@ -55,9 +55,9 @@
                </div>
             </li>
          </ul>
-         <button id="btn3">NEXT</button>
-      </form>
-      <form class="questionForm" id="q4" data-question"4">
+         <a id="btn3">NEXT</a>
+      </div>
+      <div class="questionForm" id="q4" data-question"4">
          <ul>
             <li>
                <h2>4. How do you create a function named "myFunction"?</h2>
@@ -68,9 +68,9 @@
                </div>
             </li>
          </ul>
-         <button id="btn4">NEXT</button>
-         </form>
-         <form class="questionForm" id="q5" data-question"5">
+         <a id="btn4">NEXT</a>
+         </div>
+         <div  class="questionForm" id="q5" data-question"5">
             <ul>
                <li>
                   <h2>5. Is JavaScript the same as Java</h2>
@@ -80,11 +80,13 @@
                   </div>
                </li>
             </ul>
-            <button id="submit">Submit</button>
-         </form>
-         <div id="results"></div>
+            <button type="button" id="submit">Submit</button>
          </div>
-         <footer><div class="pull-left">TOTAL: 5 QUESTION</div></footer>
+         <div id="results"></div>
+      </form>
       </div>
+
+      </div>
+      <footer class="row"><div class="pull-left">TOTAL: 5 QUESTION</div></footer>
    </body>
 </html>

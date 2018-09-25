@@ -1,9 +1,11 @@
 var scrore = 0; //set score to 0
 var total = 5; //Total number of questions
 var point = 1; //points per correct answer
-var highest = total * point;
+var highest =parseInt(" total * point");
+var medium = parseInt("highest-point");
+var lowest = parseInt("highest-point-point");
 var n = total;
-var score = highest;
+
 function init () {
    // set correct answers
    sessionStorage.setItem("A1","B");
@@ -17,6 +19,7 @@ function init () {
 
 
 $(document).ready(function() {
+
    //show first question
    $("#q1").show();
 
@@ -46,25 +49,45 @@ $(document).ready(function() {
       $('#btn4').hide();
    });
 
-   $("form.questionForm").submit(function(event){
-      event.preventDefault();
+   $('#submit').click(function() {
+      var q1 = document.getElementByName('q1');
+      var q2 = document.getElementByName('q2');
+      var q3 = document.getElementByName('q3');
+      var q4 = document.getElementByName('q4');
+      var q5 = document.getElementByName('q5');
+
+      if (n == total){
+         $("#results").html("<h2>Your final score is:"+score+ "out of"  + "highest"+"</h2><a href=\"index.html\">Take Quiz");
+      }
+      if (score == highest){
+         $("#results").append("<p>You are a JavaScript guru!</p>");
+      } else if (score == medium ){
+         $("#results").append("<p>Good job</p>");
+      } else if (score == lowest){
+         $("#result").append("<p>Poor! Revisit your notes on JavaScript</p>")
+      } else
+
+         alert ("false");
+      });
 
 
-   $(".questionFor#submit").click(function() {
+
+   });
+
+   //$(".questionFor#submit").click(function() {
 
       //get data attribute
-      current = $(this).parents("form:first").data("question");
-      next = $(this).parents("form:first").data("question")+1;
+      //current = $(this).parents("form:first").data("question");
+      //next = $(this).parents("form:first").data("question")+1;
       //Hide all questions
       // $('.questionForm').hide();
       //show next question
-      $("#q" +next+"").fadeIn(200);
-      process("+current+");
-      return false;
+      //$("#q" +next+"").fadeIn(200);
+      //process("+current+");
+      //return false;
 
-   });
-   });
-});
+   //});
+//});
 
 
 
@@ -82,16 +105,16 @@ function process(n){
 
 
 
-   }
-
 if (n == total){
    $("#results").html("<h2>Your final score is:"+score+ "out of"  + "highest"+"</h2><a href=\"index.html\">Take Quiz");
 }
 if (score == highest){
    $("#results").append("<p>You are a JavaScript guru!</p>");
-} else if (score == highest - point || score == highest - point - point){
+} else if (score == medium ){
    $("#results").append("<p>Good job</p>");
-} else{
+} else if (score == lowest){
+   $("#result").append("<p>Poor! Revisit your notes on JavaScript</p>")
+} else
 
    alert ("false");
 }

@@ -1,7 +1,7 @@
 body {
    background-image:url(..//img/image.jpg);
    background-size: cover;
-   background-repeat: repeat;
+   background-repeat: no-repeat;
    border: 30px;
    margin: 30px;
    padding: 30px;
@@ -19,4 +19,8 @@ h1 {
    font-size: 30px;
    font-weight: bold;
    font-style: italic;
+}
+
+form a:hover {
+   cursor:pointer;
 }
