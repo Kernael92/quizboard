@@ -20,8 +20,3 @@ h1 {
    font-weight: bold;
    font-style: italic;
 }
-
-h2 {
-   content: counter(h2counter) ".\0000a\0000a0";
-   counter-increment: h2counter;
-}
