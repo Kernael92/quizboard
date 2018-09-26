@@ -50,8 +50,8 @@ $(document).ready(function() {
    });
 
    $('#submit').click(function() {
-      $('#q1','#q2', '#q3', '#q4', '#q5').hide();
-      $('#afterSubmit').fadeIn();
+      $('#quiz').hide();
+      $('#afterSubmit').show();
       var q1 = document.quiz.q1.value;
       var q2 = document.quiz.q2.value;
       var q3 = document.quiz.q3.value;
@@ -92,7 +92,7 @@ $(document).ready(function() {
          range = 0
       }
 
-
+      //document.getElementById('#afterSubmit').styles.visibilty = "visible";
       document.getElementById('message').innerHTML = messages[range];
       document.getElementById('results').innerHTML = "You got " +score+ " correct";
       document.getElementById('picture').src = pictures[range];
