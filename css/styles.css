@@ -36,3 +36,29 @@ a {
    transition-duration: 1s;
 
 }
+#afterSubmit {
+   visibility: hidden;
+   padding: 30px;
+   margin: 30px;
+   border: 30px;
+   font-size: 20px;
+   background-image: url(../img/images.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+#submit {
+   ackground-color: green;
+   border-radius: 5px;
+   padding:12px;
+   color: blue;
+   font-size: 18px;
+   margin-top: 16px;
+   transition-duration: 1s;
+
+}
+#submit.hover {
+   background: white;
+   color: blue;
+   cursor:pointer;
+}
