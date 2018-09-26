@@ -77,7 +77,7 @@ $(document).ready(function() {
       }
 
       var messages = ["Great job!", "That's just okay!", "You really need to do better!"];
-
+      var pictures = ["img/WIN.gif", "img/OKAY.gif", "img/lose.gif"];
 
       var range;
 
@@ -94,7 +94,8 @@ $(document).ready(function() {
 
 
       document.getElementById('message').innerHTML = messages[range];
-      document.getElementById('results').innerHTML = "You got " +score+ "correct";
+      document.getElementById('results').innerHTML = "You got " +score+ " correct";
+      document.getElementById('picture').src = pictures[range];
 
 
 
