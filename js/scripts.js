@@ -75,11 +75,15 @@ $(document).ready(function() {
       }
 
       if (correct < 2) {
-         alert("You can do better! Kindly revisit your JavaScript notes.")
+         alert("You can do better! Kindly revisit your JavaScript notes.");
       }
       if (correct > 3) {
-         alert("Great work! You are a JavaScript guru")
+         alert("Great work! You are a JavaScript guru");
       }
+
+
+
+
    });
 });
 
@@ -95,24 +99,7 @@ $(document).ready(function() {
 
 
 
-   //    if (n == total){
-   //       $("#results").html("<h2>Your final score is:"+score+ "out of"  + "highest"+"</h2><a href=\"index.html\">Take Quiz");
-   //    }
-   //    if (score == highest){
-   //       $("#results").append("<p>You are a JavaScript guru!</p>");
-   //    } else if (score == medium ){
-   //       $("#results").append("<p>Good job</p>");
-   //    } else if (score == lowest){
-   //       $("#result").append("<p>Poor! Revisit your notes on JavaScript</p>")
-   //    } else
    //
-   //       alert ("false");
-   //    });
-   //
-   //
-   //
-   // });
-
    //$(".questionFor#submit").click(function() {
 
       //get data attribute
