@@ -42,7 +42,7 @@ a {
    margin: 0px;
    border: 10px;
    font-size: 40px;
-   color: #008000;
+   color: #B22222;
 
 
 }
@@ -61,4 +61,11 @@ a {
    background: white;
    color: blue;
    cursor:pointer;
+}
+.row {
+   font-style: italic;
+   font-size: 20px;
+   color: #006400;
+   border-radius: 5px;
+   font-weight: bold;
 }
