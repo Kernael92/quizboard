@@ -50,36 +50,53 @@ $(document).ready(function() {
    });
 
    $('#submit').click(function() {
+      $('#q1','#q2', '#q3', '#q4', '#q5').hide();
+      $('#afterSubmit').fadeIn();
       var q1 = document.quiz.q1.value;
       var q2 = document.quiz.q2.value;
       var q3 = document.quiz.q3.value;
       var q4 = document.quiz.q4.value;
       var q5 = document.quiz.q5.value;
 
-      var correct = 0;
+      var score = 0;
 
       if (q1 == "B"){
-         correct++;
+         score++;
       }
       if (q2 == "A") {
-         correct++
+         score++
       }
       if (q3 == "B") {
-         correct++
+         score++
       }
       if (q4 == "A") {
-         correct++
+         score++
       }
-      if (q2 == "B") {
-         correct++
+      if (q5 == "B") {
+         score++
       }
 
-      if (correct < 2) {
-         alert("You can do better! Kindly revisit your JavaScript notes.");
+      var messages = ["Great job!", "That's just okay!", "You really need to do better!"];
+
+
+      var range;
+
+
+      if (score < 1) {
+         range = 2;
       }
-      if (correct > 3) {
-         alert("Great work! You are a JavaScript guru");
+      if (score > 0 && score < 3) {
+         range = 1;
       }
+      if (score >= 3) {
+         range = 0
+      }
+
+
+      document.getElementById('message').innerHTML = messages[range];
+      document.getElementById('results').innerHTML = "You got " +score+ "correct";
+
+
 
 
 
@@ -123,27 +140,27 @@ $(document).ready(function() {
 
 
 //process the answers
-function process(n){
-   var submitted = $("input[name=q'+n+']:checked").val();
-   if(submitted = sessionStorage.getItem("A"+n+'')){
-      score + score + point
-   }
-
-
-
-if (n == total){
-   $("#results").html("<h2>Your final score is:"+score+ "out of"  + "highest"+"</h2><a href=\"index.html\">Take Quiz");
-}
-if (score == highest){
-   $("#results").append("<p>You are a JavaScript guru!</p>");
-} else if (score == medium ){
-   $("#results").append("<p>Good job</p>");
-} else if (score == lowest){
-   $("#result").append("<p>Poor! Revisit your notes on JavaScript</p>")
-} else
-
-   alert ("false");
-}
+// function process(n){
+//    var submitted = $("input[name=q'+n+']:checked").val();
+//    if(submitted = sessionStorage.getItem("A"+n+'')){
+//       score + score + point
+//    }
+//
+//
+//
+// if (n == total){
+//    $("#results").html("<h2>Your final score is:"+score+ "out of"  + "highest"+"</h2><a href=\"index.html\">Take Quiz");
+// }
+// if (score == highest){
+//    $("#results").append("<p>You are a JavaScript guru!</p>");
+// } else if (score == medium ){
+//    $("#results").append("<p>Good job</p>");
+// } else if (score == lowest){
+//    $("#result").append("<p>Poor! Revisit your notes on JavaScript</p>")
+// } else
+//
+//    alert ("false");
+// }
 
 
 
