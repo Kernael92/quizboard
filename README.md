@@ -11,7 +11,7 @@
 * BEHAVIOUR DRIVEN DEVELOPMENT
 
 |  BEHAVIOR                    | INPUT EXAMPLE | OUTPUT EXAMPLE  |
-|------------------------------|---------------|-----------------|
+|------------------------------|:---------------:|:-----------------:|
 |  USER CLICK ON RADIO BUTTONS | RIGHT ANSWER  | ALERT 1 CORRECT |
 |  USER THINK THEY ARE RIGHT   | WRONG ANSWER  | ALERT 0 CORRECT |
 
